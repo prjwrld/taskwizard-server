@@ -1,11 +1,47 @@
-# TaskWizard – Server
+# TaskWizard Server ✨
 
-FastAPI + Ollama endpoint that turns any goal into a step-by-step roadmap.
+Your personal task breakdown assistant, powered by **FastAPI** and a local **LLM** (Llama3.2 via Ollama).
 
-## Quick start (local)
+## 🛠️ Features
+- 🚀 FastAPI backend
+- 🔥 Local LLM (Ollama) integration
+- 🧠 Smart prompt engineering (goal → steps)
+- 🌎 Web frontend (React Native + Expo exported)
+- 🌟 100% Offline or Local server running
+- 📦 Deployable to Render / Vercel / your own server
 
+## 📂 Project Structure
+
+taskwizard-server/
+├── main.py         # FastAPI server logic
+├── requirements.txt # Python dependencies
+├── .gitignore
+├── LICENSE
+└── README.md
+
+## ⚙️ Requirements
+- Python 3.10+ ✅
+- Ollama (local LLM runner) ✅
+- FastAPI, Uvicorn, Requests
+
+## 🚀 Quick Start
 ```bash
-ollama serve                       # terminal 1 – starts model API on :11434
+# Clone the repo
+git clone https://github.com/prjwrld/taskwizard-server.git
+cd taskwizard-server
+
+# Install dependencies
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8000 
-```
+
+# Start Ollama (make sure it's running)
+ollama run llama3.2
+
+# Run the FastAPI server
+uvicorn main:app --reload --port 8000
+
+	•	Visit: http://localhost:8000/docs (Swagger UI to test)
+
+🏆 Credits
+	•	FastAPI
+	•	Ollama
+	•	Llama 3.2B Model
