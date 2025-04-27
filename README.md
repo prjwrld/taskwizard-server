@@ -1,3 +1,4 @@
+![Made with FastAPI](https://img.shields.io/badge/Made%20with-FastAPI-00c7b7?style=for-the-badge&logo=fastapi)
 # TaskWizard Server ✨
 
 Your personal task breakdown assistant, powered by **FastAPI** and a local **LLM** (Llama3.2 via Ollama).
